@@ -38,12 +38,14 @@
 		<Unit filename="include/Contrato.h" />
 		<Unit filename="include/ContratoMovil.h" />
 		<Unit filename="include/ContratoTP.h" />
+		<Unit filename="include/Empresa.h" />
 		<Unit filename="include/Fecha.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Cliente.cpp" />
 		<Unit filename="src/Contrato.cpp" />
 		<Unit filename="src/ContratoMovil.cpp" />
 		<Unit filename="src/ContratoTP.cpp" />
+		<Unit filename="src/Empresa.cpp" />
 		<Unit filename="src/Fecha.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />

@@ -1,15 +1,15 @@
 # depslib dependency file v1.0
-1729464372 source:c:\users\leonl\desktop\practica1\src\contrato.cpp
+1729953830 source:c:\users\leonl\desktop\practica1\src\contrato.cpp
 	"Contrato.h"
 
-1729675719 c:\users\leonl\desktop\practica1\include\contrato.h
+1729672119 c:\users\leonl\desktop\practica1\include\contrato.h
 	<iostream>
 	"Fecha.h"
 
-1729442837 c:\users\leonl\desktop\practica1\include\fecha.h
+1729439237 c:\users\leonl\desktop\practica1\include\fecha.h
 	<iostream>
 
-1729550878 source:c:\users\leonl\desktop\practica1\src\contratomovil.cpp
+1729547278 source:c:\users\leonl\desktop\practica1\src\contratomovil.cpp
 	<iostream>
 	<cstdlib>
 	<cstring>
@@ -17,20 +17,20 @@
 	"Contrato.h"
 	"ContratoMovil.h"
 
-1729675719 c:\users\leonl\desktop\practica1\include\contratomovil.h
+1729672119 c:\users\leonl\desktop\practica1\include\contratomovil.h
 	<iostream>
 	"Fecha.h"
 	"Contrato.h"
 
-1729591114 source:c:\users\leonl\desktop\practica1\src\contratotp.cpp
+1729587514 source:c:\users\leonl\desktop\practica1\src\contratotp.cpp
 	"ContratoTP.h"
 
-1729675719 c:\users\leonl\desktop\practica1\include\contratotp.h
+1729672119 c:\users\leonl\desktop\practica1\include\contratotp.h
 	<iostream>
 	"Fecha.h"
 	"Contrato.h"
 
-1729453540 source:c:\users\leonl\desktop\practica1\src\cliente.cpp
+1729449940 source:c:\users\leonl\desktop\practica1\src\cliente.cpp
 	"Cliente.h"
 	<cstdlib>
 	<cstring>
@@ -38,20 +38,32 @@
 	<sstream>
 	"Cliente.h"
 
-1729453540 c:\users\leonl\desktop\practica1\include\cliente.h
+1729449940 c:\users\leonl\desktop\practica1\include\cliente.h
 	"Fecha.h"
 	<iostream>
 
-1729673809 source:c:\users\leonl\desktop\practica1\main.cpp
+1729950151 source:c:\users\leonl\desktop\practica1\main.cpp
 	<cstdlib>
 	<iostream>
 	<iomanip>
 	"Fecha.h"
+	"Cliente.h"
 	"Contrato.h"
 	"ContratoTP.h"
 	"ContratoMovil.h"
+	"Empresa.h"
 
-1729452778 source:c:\users\leonl\desktop\practica1\src\fecha.cpp
+1729449178 source:c:\users\leonl\desktop\practica1\src\fecha.cpp
 	<iostream>
 	"Fecha.h"
+
+1730031506 source:c:\users\leonl\desktop\practica1\src\empresa.cpp
+	"Empresa.h"
+
+1729952260 c:\users\leonl\desktop\practica1\include\empresa.h
+	"Fecha.h"
+	"Cliente.h"
+	"Contrato.h"
+	"ContratoTP.h"
+	"ContratoMovil.h"
 
