@@ -26,7 +26,7 @@
     }
 
     ostream& operator<<(ostream &s, const Contrato &c) {
-      s << c.getDniContrato() << " (" << c.getIdContrato() << " - " << c.getFechaContrato() << " )";
+      s << c.getDniContrato() << " (" << c.getIdContrato() << " - " << c.getFechaContrato() << ")";
       return s;
     }
 

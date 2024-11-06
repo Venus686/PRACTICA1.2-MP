@@ -9,7 +9,6 @@ const float ContratoTP::precioExcesoMinutos=0.15;
 
 ContratoTP::ContratoTP(long int dni, Fecha f,int m ): Contrato(dni, f) {
   this->minutosHablados=m;
-  //impedir minutos hablados negativos
 }
 
 //static se pone en el .h (no se pone en el .cpp)
@@ -38,6 +37,6 @@ void ContratoTP::ver() const {
 ostream& operator<<(ostream &s, const ContratoTP &c) {
   s << (Contrato &)c;
 
-  s << " " << c.getMinutosHablados() << "m, " << c.getLimiteMinutos() << "(" << c.getPrecio() << ") - " << c.factura() << "€";
+  s << " " << c.getMinutosHablados() << "m, " << c.getLimiteMinutos() << "(" << c.getPrecio() << ") - " << c.factura() << "$";
   return s;
 }

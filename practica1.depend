@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1729953830 source:c:\users\leonl\desktop\practica1\src\contrato.cpp
+1730284079 source:c:\users\leonl\desktop\practica1\src\contrato.cpp
 	"Contrato.h"
 
 1729672119 c:\users\leonl\desktop\practica1\include\contrato.h
@@ -9,7 +9,7 @@
 1729439237 c:\users\leonl\desktop\practica1\include\fecha.h
 	<iostream>
 
-1729547278 source:c:\users\leonl\desktop\practica1\src\contratomovil.cpp
+1730283930 source:c:\users\leonl\desktop\practica1\src\contratomovil.cpp
 	<iostream>
 	<cstdlib>
 	<cstring>
@@ -22,7 +22,7 @@
 	"Fecha.h"
 	"Contrato.h"
 
-1729587514 source:c:\users\leonl\desktop\practica1\src\contratotp.cpp
+1730283904 source:c:\users\leonl\desktop\practica1\src\contratotp.cpp
 	"ContratoTP.h"
 
 1729672119 c:\users\leonl\desktop\practica1\include\contratotp.h
@@ -57,7 +57,7 @@
 	<iostream>
 	"Fecha.h"
 
-1730031506 source:c:\users\leonl\desktop\practica1\src\empresa.cpp
+1730283683 source:c:\users\leonl\desktop\practica1\src\empresa.cpp
 	"Empresa.h"
 
 1729952260 c:\users\leonl\desktop\practica1\include\empresa.h

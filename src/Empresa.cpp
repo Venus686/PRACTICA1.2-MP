@@ -63,19 +63,16 @@ int Empresa::nContratosTP() const {
 
  int Empresa:: descuento(float porcentaje) const {
 
-        int count = 0; // Contador para contratos Movil
-
-        // Recorremos todos los contratos
-        for (int i = 0; i < ncon; ++i) {
-            // Intentar hacer un dynamic_cast a ContratoMovil
-            ContratoMovil* movilContrato = dynamic_cast<ContratoMovil*>(contratos[i]);
-            if (movilContrato) {
-                // Se realiza el descuento
-                count++; // Incrementamos el contador si se aplicó el descuento
-            }
+    int cont  = 0; // Contador para contratos Movil
+    for (int i = 0; i < ncon; ++i) {
+    ContratoMovil* movilContrato = dynamic_cast<ContratoMovil*>(contratos[i]);
+        if (movilContrato) {
+            movilContrato->setPrecioMinuto(movilContrato->getPrecioMinuto()*(100-porcentaje)/100);
+            cont++;
         }
-        return count; // Retorna la cantidad de contratos Movil que se han actualizado
     }
+        return cont;
+}
 
 void Empresa::crearContrato() { //EL ALUMNO DEBE TERMINAR DE IMPLEMENTAR ESTE METODO
  long int dni;
@@ -90,26 +87,29 @@ void Empresa::crearContrato() { //EL ALUMNO DEBE TERMINAR DE IMPLEMENTAR ESTE ME
      char nombre[100];
      Cliente *c; //NO CREO NINGUN CLIENTE SINO SOLO UN PUNTERO A CLIENTE
      cout << "Nombre del cliente: ";
-     cin >> nombre;
+     cin.ignore();
+     cin.getline (nombre,100);
      cout << "Introduce Fecha (dd mm aaaa): ";
      cin >> dia >> mes >> anio;
      c=new Cliente(dni, nombre, Fecha(dia, mes, anio));
      pos=this->altaCliente(c); //OJO HAY QUE IMPLEMENTARLO
  }
  //viendo cuanto vale la variable pos sé si el cliente se ha dado de alta o no
-    if (pos!=-1) {
+if (pos !=-1){
         int tipoContrato;
         int dia, mes, anio;
         int minutos;
-        cout<<  "Tipo de Contrato a abrir: (1- Tafifa Plana, 2- Movil) :";
+        cout<<  "Tipo de Contrato a abrir: (1- Tafifa Plana, 2- Movil): ";
         cin>> tipoContrato;
          Contrato *nuevoContrato = nullptr;
     if (tipoContrato == 1) {
-        cout<< "Fecha del contrato"<<endl;
+        cout<< "Fecha del contrato:"<<endl;
         cout<<"dia: ";
+        cin>>dia;
         cout<<"mes: ";
+        cin>>mes;
         cout<< "anio: ";
-        cin>> dia>>mes>>anio;
+        cin>>anio;
 
         cout << "minutos hablados: ";
         cin >> minutos;
@@ -122,9 +122,11 @@ void Empresa::crearContrato() { //EL ALUMNO DEBE TERMINAR DE IMPLEMENTAR ESTE ME
             char nacionalidad[100]; // Para la nacionalidad
             cout<< "Fecha del contrato"<<endl;
             cout<<"dia: ";
+            cin>>dia;
             cout<<"mes: ";
+            cin>>mes;
             cout<< "anio: ";
-            cin>> dia>>mes>>anio;
+            cin>> anio;
             cout << "minutos hablados: " ;
             cin >> minutos;
             cout << "Precio minuto: ";
@@ -154,8 +156,7 @@ void Empresa::crearContrato() { //EL ALUMNO DEBE TERMINAR DE IMPLEMENTAR ESTE ME
 
         // Lógica para insertar el nuevo contrato
         contratos[ncon++] = nuevoContrato; // Añadir el nuevo contrato y aumentar el contador
-
-    }
+}
 }
 
 //el cliente existe o se ha dado de alta
